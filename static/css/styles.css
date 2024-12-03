@@ -1,0 +1,122 @@
+#logo {
+    display: block;
+    margin: 0 auto 10px; /* Center the logo and add spacing below */
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #b3d9ff;
+    color: #004d80;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#chat-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-box {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds spacing between messages */
+}
+
+#input-area {
+    display: flex;
+    margin-top: 10px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#send-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#resources {
+    width: 25%;
+    padding: 10px;
+    background-color: #e6f7ff;
+    border-radius: 5px;
+}
+
+#resources h2 {
+    text-align: center;
+    color: #004d80;
+}
+
+.resource-item {
+    margin-bottom: 20px;
+}
+
+.resource-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.resource-item p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Styles for chat messages */
+.user-message, .bot-message, .error-message {
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    line-height: 1.4;
+}
+
+.user-message {
+    background-color: #d9fdd3; /* Light green background for user messages */
+    align-self: flex-start; /* Align user messages to the left */
+}
+
+.bot-message {
+    background-color: #d3e5fa; /* Light blue background for bot messages */
+    align-self: flex-end; /* Align bot messages to the right */
+}
+
+.error-message {
+    background-color: #fdd3d3; /* Light red background for error messages */
+    color: red; /* Red text for error messages */
+    align-self: center; /* Center align errors */
+}
